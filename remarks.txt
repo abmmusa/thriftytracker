@@ -1,0 +1,10 @@
+Sampler remarks after GIS 13 submission:
+---------------------------------------
+-Create a separate class for calculating bytes over 3g. It's used at both sampler_new.py and evaluator_new.py
+-Statistical budget delay sampler and factorized budget delay sampler are tested from evaluator_jobs_sampler_new_small.sh. Organize it more and integrate with the main scripts after testing it thoroughly. 
+-Write some unit test cases. Things can break easily similar to the cython bug.
+-Verify that the complex equation is necessary at error delay. Things might work without that optimization.
+-Write up how we construct the offline table using reachtime, bucketized errors, logarithmic smoothing etc.
+-In the error budget sampler, the delay is written to a file from sampler. But ideally this should be written to a file from server. Not a big issue, but would be nice to fix.
+-Find out why the new straw-man sampler performs very close to our budget delay. Here the straw-man feels up a delay window up to the delay and send compressed version of it where the amount of compression depends on the available savings. We need to test with the data that has some stationary vehicles... small osm test case doesn't have stationary data.
+-Implement straw-man for error budget where it buffers samples until the budget is available and then sends it. So less the budget, more the delay.

@@ -1,0 +1,51 @@
+1. The jobs below will produce all const-loc data for 3d-plots as well as all const-loc evaluation plots for osm2 dataset
+
+-Run error-delay and budget-delay jobs at first.
+./evaluator_jobs_sampler_osm2_errordelay_budgetdelay_constloc.sh 
+./process_evals_jobs_osm2_errordelay_budgetdelay_constloc.sh
+./scripts/process_osm2_errordelay_budgetdelay_constloc.sh
+
+- Then run error-budget jobs as error-budget depends on the data produced from error-delay sampler.
+./evaluator_jobs_sampler_osm2_errordelay_budgetdelay_constloc.sh 
+./process_evals_jobs_osm2_errordelay_budgetdelay_constloc.sh
+./scripts/process_osm2_errordelay_budgetdelay_constloc.sh
+
+-Then run following scripts to produce the plots
+./scripts/plot_osm2_constloc.sh
+
+
+2a. For *osm2* unified
+./evaluator_jobs_sampler_osm2_unified.sh
+./process_evals_jos_osm2_unified.sh
+./scrips/process_osm2_unified.sh
+./scripts/process_osm2_end2end.sh
+
+Then fill the table from this file:
+  data_new/error_delay_percentage_reduction_osm2_end2end
+
+2b. For *uic/msmls* unifield
+./evaluator_jobs_sampler_uic_unified.sh (or msmls)
+./evaluator_new_results_combine.sh (*** to combine the data from splits, for both uic and msmls)
+./process_evals_jos_uic_unified.sh (or msmls)
+./scrips/process_uic_unified.sh (or msmls)
+./process_new_end2end_unifiedonly.sh (for both uic and msmls) [for only unified data that fill the table in the paper]
+or                                     
+./scripts/process_uic_end2end.sh (or msmls) [for both const-loc and unified data] 
+
+Then fill the table from  these files:
+  data_new/error_delay_percentage_reduction_uic_end2end_unifiedonly 
+  data_new/budget_delay_percentage_reduction_p1800.0_uic_end2end_unifiedonly (or p3600.0)
+
+-Then run scripts/plot_new_end2end.sh to produce plot for all datasets
+
+3. to produce 3d data
+./scripts/produce_data_3d.sh
+./scripts/produce_data_3d_unified.sh
+
+to produce convergence plots for the paper
+./scripts/plot_new_convergence.sh 
+
+
+
+=========================
+all scripts with *test* are for small dataset

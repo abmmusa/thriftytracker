@@ -1,0 +1,311 @@
+=======
+ MSMLS
+=======
+
+set terminal pdf font "Helvetica,8" lw 3 #monochrome dashed lw 3
+set key above
+set key font ",7"
+
+set style data histogram
+set style histogram cluster gap 4
+set style fill solid border -1
+
+set auto x
+set yrange [:]
+
+set xlabel "Max error threshold"
+set ylabel "Mean duration"
+
+set output "bar_plots/msmls_etb_error_threshold_mean_max_duration_c1_BASIC_ALL.pdf"
+plot \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration2.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "M0", \
+'' using 7 ti "M1", \
+'' using 8 ti "MG", \
+'' using 10 ti "MM0", \
+'' using 11 ti "MM1"
+set output "dump"
+
+set output "bar_plots/msmls_etb_error_threshold_mean_max_duration_c1_BASIC_ALL_W_ORACLE.pdf"
+plot \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration2.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "M0", \
+'' using 7 ti "M1", \
+'' using 8 ti "MG", \
+'' using 10 ti "MM0", \
+'' using 11 ti "MM1", \
+'' using 20 ti "ORC"
+set output "dump"
+
+set output "bar_plots/msmls_etb_error_threshold_mean_max_duration_c1_BASIC_ALL_W_ORACLE_W_E.pdf"
+plot \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration2.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "M0", \
+'' using 7 ti "M1", \
+'' using 8 ti "MG", \
+'' using 10 ti "MM0", \
+'' using 11 ti "MM1", \
+'' using 20 ti "ORC", \
+'' using 14 ti "UNI-E", \
+'' using 15 ti "UNI-D"
+set output "dump"
+
+----
+set output "bar_plots/msmls_etb_error_threshold_mean_max_duration_c1_ALL.pdf"
+plot \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration2.txt' using 2:xtic(1) ti "CL", \
+'' using 5 ti "CD", \
+'' using 10 ti "M5", \
+'' using 12 ti "M7", \
+'' using 14 ti "UNI", \
+'' using 20 ti "ORC"
+set output "dump"
+
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+
+'' using 6 ti "M1", \
+'' using 7 ti "M2", \
+'' using 8 ti "M3", \
+'' using 9 ti "M4", \
+'' using 10 ti "M5", \
+'' using 11 ti "M6", \
+'' using 12 ti "M7", \
+'' using 13 ti "M8", \
+
+========
+ MSMLS2
+========
+
+set terminal pdf font "Helvetica,8" lw 3 #monochrome dashed lw 3
+set key above
+set key font ",7"
+
+set style data histogram
+set style histogram cluster gap 4
+set style fill solid border -1
+
+set auto x
+set yrange [:]
+
+set xlabel "Max error threshold"
+set ylabel "Mean duration"
+
+set output "bar_plots/msmls2_etb_error_threshold_mean_max_duration_c1_BASIC_ALL.pdf"
+plot \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration2.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "M0", \
+'' using 7 ti "M1", \
+'' using 8 ti "MG", \
+'' using 10 ti "MM0", \
+'' using 11 ti "MM1"
+set output "dump"
+
+set output "bar_plots/msmls2_etb_error_threshold_mean_max_duration_c1_BASIC_ALL_W_ORACLE.pdf"
+plot \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration2.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "M0", \
+'' using 7 ti "M1", \
+'' using 8 ti "MG", \
+'' using 10 ti "MM0", \
+'' using 11 ti "MM1", \
+'' using 20 ti "ORC"
+set output "dump"
+
+set output "bar_plots/msmls2_etb_error_threshold_mean_max_duration_c1_BASIC_ALL_W_ORACLE_W_E.pdf"
+plot \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration2.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "M0", \
+'' using 7 ti "M1", \
+'' using 8 ti "MG", \
+'' using 10 ti "MM0", \
+'' using 11 ti "MM1", \
+'' using 20 ti "ORC", \
+'' using 14 ti "UNI-E", \
+'' using 15 ti "UNI-D"
+set output "dump"
+
+----
+set output "bar_plots/msmls2_etb_error_threshold_mean_max_duration_c1.pdf"
+plot \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration2.txt' using 2:xtic(1) ti "CL", \
+'' using 5 ti "CD", \
+'' using 10 ti "M5", \
+'' using 12 ti "M7", \
+'' using 14 ti "UNI", \
+'' using 20 ti "ORC"
+set output "dump"
+
+
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+
+'' using 6 ti "M1", \
+'' using 7 ti "M2", \
+'' using 8 ti "M3", \
+'' using 9 ti "M4", \
+'' using 10 ti "M5", \
+'' using 11 ti "M6", \
+'' using 12 ti "M7", \
+'' using 13 ti "M8", \
+
+=====
+ UIC
+=====
+
+set terminal pdf font "Helvetica,8" lw 3 #monochrome dashed lw 3
+set key above
+set key font ",7"
+
+set style data histogram
+set style histogram cluster gap 4
+set style fill solid border -1
+
+set auto x
+set yrange [:]
+
+set xlabel "Max error threshold"
+set ylabel "Mean duration"
+
+set output "bar_plots/uic_etb_error_threshold_mean_max_duration_c1_BASIC_ALL.pdf"
+plot \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration2.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "M0", \
+'' using 7 ti "M1", \
+'' using 8 ti "MG", \
+'' using 10 ti "MM0", \
+'' using 11 ti "MM1"
+set output "dump"
+
+set output "bar_plots/uic_etb_error_threshold_mean_max_duration_c1_BASIC_ALL_W_ORACLE.pdf"
+plot \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration2.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "M0", \
+'' using 7 ti "M1", \
+'' using 8 ti "MG", \
+'' using 10 ti "MM0", \
+'' using 11 ti "MM1", \
+'' using 20 ti "ORC"
+set output "dump"
+
+set output "bar_plots/uic_etb_error_threshold_mean_max_duration_c1_BASIC_ALL_W_ORACLE_W_E.pdf"
+plot \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration2.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "M0", \
+'' using 7 ti "M1", \
+'' using 8 ti "MG", \
+'' using 10 ti "MM0", \
+'' using 11 ti "MM1", \
+'' using 20 ti "ORC", \
+'' using 14 ti "UNI-E", \
+'' using 15 ti "UNI-D"
+set output "dump"
+
+----
+set output "bar_plots/uic_etb_error_threshold_mean_max_duration_c1.pdf"
+plot \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration2.txt' using 2:xtic(1) ti "CL", \
+'' using 5 ti "CD", \
+'' using 10 ti "M5", \
+'' using 12 ti "M7", \
+'' using 14 ti "UNI", \
+'' using 20 ti "ORC"
+set output "dump"
+
+
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+
+'' using 6 ti "M1", \
+'' using 7 ti "M2", \
+'' using 8 ti "M3", \
+'' using 9 ti "M4", \
+'' using 10 ti "M5", \
+'' using 11 ti "M6", \
+'' using 12 ti "M7", \
+'' using 13 ti "M8", \
+
+=====
+ OSM
+=====
+
+set terminal pdf font "Helvetica,8" lw 3 #monochrome dashed lw 3
+set key above
+set key font ",7"
+
+set style data histogram
+set style histogram cluster gap 4
+set style fill solid border -1
+
+set auto x
+set yrange [:]
+
+set xlabel "Max error threshold"
+set ylabel "Mean duration"
+
+set output "bar_plots/osm_etb_error_threshold_mean_max_duration_BASIC_ALL.pdf"
+plot \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_mean_max_duration2.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD"
+set output "dump"
+
+set output "bar_plots/osm_etb_error_threshold_mean_max_duration_BASIC_ALL_W_ORACLE.pdf"
+plot \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_mean_max_duration2.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 12 ti "ORC"
+set output "dump"
+
+set output "bar_plots/osm_etb_error_threshold_mean_max_duration_BASIC_ALL_W_ORACLE_W_E.pdf"
+plot \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_mean_max_duration2.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 12 ti "ORC", \
+'' using 6 ti "UNI-E", \
+'' using 7 ti "UNI-D"
+set output "dump"
+
+----
+set output "bar_plots/osm_etb_error_threshold_mean_max_duration.pdf"
+plot \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_mean_max_duration2.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "UNI", \
+'' using 12 ti "ORC"
+set output "dump"
+

@@ -1,0 +1,415 @@
+=======
+ MSMLS
+=======
+
+set terminal pdf font "Helvetica,10" lw 3 #monochrome dashed lw 3
+set key above
+
+set xlabel "Max error threshold"
+set ylabel "Mean duration"
+
+set output "line_plots/msmls_etb_error_threshold_mean_max_duration_c1.pdf"
+plot [1:200] [:] \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:2 with lines ti "CL", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:10 with lines ti "M5", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:12 with lines ti "M7", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:14 with lines ti "E0", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:15 with lines ti "DX0", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:16 with lines ti "T0", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:17 with lines ti "E1", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:18 with lines ti "DX1", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:19 with lines ti "T1", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:20 with lines ti "OR"
+set output "dump"
+
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:3 with lines ti "CV", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:4 with lines ti "CA", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:5 with lines ti "CD", \
+
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:6 with lines ti "M1", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:7 with lines ti "M2", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:8 with lines ti "M3", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:9 with lines ti "M4", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:10 with lines ti "M5", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:11 with lines ti "M6", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:12 with lines ti "M7", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:13 with lines ti "M8", \
+
+
+set xlabel "Max error threshold"
+set ylabel "Median duration"
+
+set output "line_plots/msmls_etb_error_threshold_median_max_duration_c1.pdf"
+plot [1:200] [:] \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:2 with lines ti "CL", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:10 with lines ti "M5", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:12 with lines ti "M7", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:14 with lines ti "E0", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:15 with lines ti "DX0", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:16 with lines ti "T0", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:17 with lines ti "E1", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:18 with lines ti "DX1", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:19 with lines ti "T1", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:20 with lines ti "OR"
+set output "dump"
+
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:3 with lines ti "CV", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:4 with lines ti "CA", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:5 with lines ti "CD", \
+
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:6 with lines ti "M1", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:7 with lines ti "M2", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:8 with lines ti "M3", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:9 with lines ti "M4", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:10 with lines ti "M5", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:11 with lines ti "M6", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:12 with lines ti "M7", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:13 with lines ti "M8", \
+
+
+set xlabel "Time interval"
+set ylabel "Mean mean error"
+
+set output "line_plots/msmls_etb_duration_threshold_mean_mean_error_c1.pdf"
+plot [10:120] [:] \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:2 with lines ti "CL", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:3 with lines ti "CV", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:4 with lines ti "CA", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:5 with lines ti "CD", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:6 with lines ti "M1", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:7 with lines ti "M2", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:8 with lines ti "M3", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:9 with lines ti "M4", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:10 with lines ti "M5", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:11 with lines ti "M6", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:12 with lines ti "DX"
+set output "dump"
+
+
+set xlabel "Time interval"
+set ylabel "Mean max error"
+
+set output "line_plots/msmls_etb_duration_threshold_mean_max_error_c1.pdf"
+plot [10:120] [:] \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:2 with lines ti "CL", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:3 with lines ti "CV", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:4 with lines ti "CA", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:5 with lines ti "CD", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:6 with lines ti "M1", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:7 with lines ti "M2", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:8 with lines ti "M3", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:9 with lines ti "M4", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:10 with lines ti "M5", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:11 with lines ti "M6", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:12 with lines ti "DX"
+set output "dump"
+
+
+set xlabel "Time interval"
+set ylabel "Median max error"
+
+set output "line_plots/msmls_etb_duration_threshold_median_max_error_c1.pdf"
+plot [10:120] [:] \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:2 with lines ti "CL", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:3 with lines ti "CV", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:4 with lines ti "CA", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:5 with lines ti "CD", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:6 with lines ti "M1", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:7 with lines ti "M2", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:8 with lines ti "M3", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:9 with lines ti "M4", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:10 with lines ti "M5", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:11 with lines ti "M6", \
+'extrapolator_testbench_output_msmls_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:12 with lines ti "DX"
+set output "dump"
+
+========
+ MSMLS2
+========
+
+set terminal pdf font "Helvetica,10" lw 3 #monochrome dashed lw 3
+set key above
+
+set xlabel "Max error threshold"
+set ylabel "Mean duration"
+
+set output "line_plots/msmls2_etb_error_threshold_mean_max_duration_c1.pdf"
+plot [1:200] [:] \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:5 with lines ti "CD", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:11 with lines ti "M6", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:13 with lines ti "M8", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:14 with lines ti "E0", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:15 with lines ti "DX0", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:16 with lines ti "T0", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:17 with lines ti "E1", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:18 with lines ti "DX1", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:19 with lines ti "T1", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:20 with lines ti "OR"
+set output "dump"
+
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:2 with lines ti "CL", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:3 with lines ti "CV", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:4 with lines ti "CA", \
+
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:6 with lines ti "M1", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:7 with lines ti "M2", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:8 with lines ti "M3", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:9 with lines ti "M4", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:10 with lines ti "M5", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:11 with lines ti "M6", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:12 with lines ti "M7", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:13 with lines ti "M8", \
+
+set xlabel "Max error threshold"
+set ylabel "Median duration"
+
+set output "line_plots/msmls2_etb_error_threshold_median_max_duration_c1.pdf"
+plot [1:200] [:] \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:5 with lines ti "CD", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:11 with lines ti "M6", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:13 with lines ti "M8", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:14 with lines ti "E0", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:15 with lines ti "DX0", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:16 with lines ti "T0", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:17 with lines ti "E1", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:18 with lines ti "DX1", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:19 with lines ti "T1", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:20 with lines ti "OR"
+set output "dump"
+
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:2 with lines ti "CL", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:3 with lines ti "CV", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:4 with lines ti "CA", \
+
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:6 with lines ti "M1", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:7 with lines ti "M2", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:8 with lines ti "M3", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:9 with lines ti "M4", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:10 with lines ti "M5", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:11 with lines ti "M6", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:12 with lines ti "M7", \
+'extrapolator_testbench_output_msmls2_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:13 with lines ti "M8", \
+
+=====
+ UIC
+=====
+
+set terminal pdf font "Helvetica,10" lw 3 #monochrome dashed lw 3
+set key above
+
+set xlabel "Max error threshold"
+set ylabel "Mean duration"
+
+set output "line_plots/uic_etb_error_threshold_mean_max_duration_c1.pdf"
+plot [1:200] [:] \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:5 with lines ti "CD", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:10 with lines ti "M5", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:12 with lines ti "M7", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:14 with lines ti "E1", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:15 with lines ti "DX0", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:16 with lines ti "T0", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:17 with lines ti "E1", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:18 with lines ti "DX1", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:19 with lines ti "T1", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:20 with lines ti "OR"
+set output "dump"
+
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:2 with lines ti "CL", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:3 with lines ti "CV", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:4 with lines ti "CA", \
+
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:6 with lines ti "M1", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:7 with lines ti "M2", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:8 with lines ti "M3", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:9 with lines ti "M4", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:10 with lines ti "M5", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:11 with lines ti "M6", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:12 with lines ti "M7", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_mean_max_duration.txt' using 1:13 with lines ti "M8", \
+
+set xlabel "Max error threshold"
+set ylabel "Median duration"
+
+set output "line_plots/uic_etb_error_threshold_median_max_duration_c1.pdf"
+plot [1:200] [:] \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:5 with lines ti "CD", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:10 with lines ti "M5", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:12 with lines ti "M7", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:14 with lines ti "E0", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:15 with lines ti "DX0", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:16 with lines ti "T0", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:17 with lines ti "E1", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:18 with lines ti "DX1", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:19 with lines ti "T1", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:20 with lines ti "OR"
+set output "dump"
+
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:2 with lines ti "CL", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:3 with lines ti "CV", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:4 with lines ti "CA", \
+
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:6 with lines ti "M1", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:7 with lines ti "M2", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:8 with lines ti "M3", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:9 with lines ti "M4", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:10 with lines ti "M5", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:11 with lines ti "M6", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:12 with lines ti "M7", \
+'extrapolator_testbench_output_uic_c1/extrapolators_error_threshold_median_max_duration.txt' using 1:13 with lines ti "M8", \
+
+set xlabel "Time interval"
+set ylabel "Mean mean error"
+
+set output "line_plots/uic_etb_duration_threshold_mean_mean_error_c1.pdf"
+plot [1:120] [:] \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:2 with lines ti "CL", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:3 with lines ti "CV", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:4 with lines ti "CA", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:5 with lines ti "CD", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:8 with lines ti "M3", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:10 with lines ti "M5", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:12 with lines ti "E", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:13 with lines ti "DX", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:14 with lines ti "T"
+set output "dump"
+
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:6 with lines ti "M1", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:7 with lines ti "M2", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:8 with lines ti "M3", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:9 with lines ti "M4", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:10 with lines ti "M5", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_mean_error.txt' using 1:11 with lines ti "M6", \
+
+
+set xlabel "Time interval"
+set ylabel "Mean max error"
+
+set output "line_plots/uic_etb_duration_threshold_mean_max_error_c1.pdf"
+plot [1:120] [:] \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:2 with lines ti "CL", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:3 with lines ti "CV", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:4 with lines ti "CA", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:5 with lines ti "CD", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:8 with lines ti "M3", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:10 with lines ti "M5", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:12 with lines ti "E", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:13 with lines ti "DX", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:14 with lines ti "T"
+set output "dump"
+
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:6 with lines ti "M1", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:7 with lines ti "M2", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:8 with lines ti "M3", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:9 with lines ti "M4", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:10 with lines ti "M5", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_mean_max_error.txt' using 1:11 with lines ti "M6", \
+
+set xlabel "Time interval"
+set ylabel "Median max error"
+
+set output "line_plots/uic_etb_duration_threshold_median_max_error_c1.pdf"
+plot [1:120] [:] \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:2 with lines ti "CL", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:3 with lines ti "CV", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:4 with lines ti "CA", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:5 with lines ti "CD", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:8 with lines ti "M3", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:10 with lines ti "M5", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:12 with lines ti "E", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:13 with lines ti "DX", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:14 with lines ti "T"
+set output "dump"
+
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:6 with lines ti "M1", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:7 with lines ti "M2", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:8 with lines ti "M3", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:9 with lines ti "M4", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:10 with lines ti "M5", \
+'extrapolator_testbench_output_uic_c1/extrapolators_duration_threshold_median_max_error.txt' using 1:11 with lines ti "M6", \
+
+=====
+ OSM
+=====
+
+set terminal pdf font "Helvetica,10" lw 3 #monochrome dashed lw 3
+set key above
+
+set xlabel "Max error threshold"
+set ylabel "Mean duration"
+
+set output "line_plots/osm_etb_error_threshold_mean_max_duration.pdf"
+plot [1:200] [:] \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_mean_max_duration.txt' using 1:2 with lines ti "CL", \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_mean_max_duration.txt' using 1:3 with lines ti "CV", \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_mean_max_duration.txt' using 1:4 with lines ti "CA", \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_mean_max_duration.txt' using 1:5 with lines ti "CD", \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_mean_max_duration.txt' using 1:6 with lines ti "E0", \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_mean_max_duration.txt' using 1:7 with lines ti "DX0", \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_mean_max_duration.txt' using 1:8 with lines ti "T0", \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_mean_max_duration.txt' using 1:9 with lines ti "E1", \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_mean_max_duration.txt' using 1:11 with lines ti "T1", \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_mean_max_duration.txt' using 1:12 with lines ti "OR"
+set output "dump"
+
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_mean_max_duration.txt' using 1:10 with lines ti "DX1", \
+
+set xlabel "Max error threshold"
+set ylabel "Median duration"
+
+set output "line_plots/osm_etb_error_threshold_median_max_duration.pdf"
+plot [1:200] [:] \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_median_max_duration.txt' using 1:2 with lines ti "CL", \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_median_max_duration.txt' using 1:3 with lines ti "CV", \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_median_max_duration.txt' using 1:4 with lines ti "CA", \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_median_max_duration.txt' using 1:5 with lines ti "CD", \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_median_max_duration.txt' using 1:6 with lines ti "E0", \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_median_max_duration.txt' using 1:7 with lines ti "DX0", \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_median_max_duration.txt' using 1:8 with lines ti "T0", \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_median_max_duration.txt' using 1:9 with lines ti "E1", \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_median_max_duration.txt' using 1:11 with lines ti "T1", \
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_median_max_duration.txt' using 1:12 with lines ti "OR"
+set output "dump"
+
+'extrapolator_testbench_output_osm/extrapolators_error_threshold_median_max_duration.txt' using 1:10 with lines ti "DX1", \
+
+set xlabel "Time interval"
+set ylabel "Mean mean error"
+
+set output "line_plots/osm_etb_duration_threshold_mean_mean_error.pdf"
+plot [1:120] [:] \
+'extrapolator_testbench_output_osm/extrapolators_duration_threshold_mean_mean_error.txt' using 1:2 with lines ti "CL", \
+'extrapolator_testbench_output_osm/extrapolators_duration_threshold_mean_mean_error.txt' using 1:3 with lines ti "CV", \
+'extrapolator_testbench_output_osm/extrapolators_duration_threshold_mean_mean_error.txt' using 1:4 with lines ti "CA", \
+'extrapolator_testbench_output_osm/extrapolators_duration_threshold_mean_mean_error.txt' using 1:5 with lines ti "CD", \
+'extrapolator_testbench_output_osm/extrapolators_duration_threshold_mean_mean_error.txt' using 1:6 with lines ti "E", \
+'extrapolator_testbench_output_osm/extrapolators_duration_threshold_mean_mean_error.txt' using 1:7 with lines ti "DX", \
+'extrapolator_testbench_output_osm/extrapolators_duration_threshold_mean_mean_error.txt' using 1:8 with lines ti "T"
+set output "dump"
+
+set xlabel "Time interval"
+set ylabel "Mean max error"
+
+set output "line_plots/osm_etb_duration_threshold_mean_max_error.pdf"
+plot [1:120] [:] \
+'extrapolator_testbench_output_osm/extrapolators_duration_threshold_mean_max_error.txt' using 1:2 with lines ti "CL", \
+'extrapolator_testbench_output_osm/extrapolators_duration_threshold_mean_max_error.txt' using 1:3 with lines ti "CV", \
+'extrapolator_testbench_output_osm/extrapolators_duration_threshold_mean_max_error.txt' using 1:4 with lines ti "CA", \
+'extrapolator_testbench_output_osm/extrapolators_duration_threshold_mean_max_error.txt' using 1:5 with lines ti "CD", \
+'extrapolator_testbench_output_osm/extrapolators_duration_threshold_mean_max_error.txt' using 1:6 with lines ti "E", \
+'extrapolator_testbench_output_osm/extrapolators_duration_threshold_mean_max_error.txt' using 1:7 with lines ti "DX", \
+'extrapolator_testbench_output_osm/extrapolators_duration_threshold_mean_max_error.txt' using 1:8 with lines ti "T"
+set output "dump"
+
+set xlabel "Time interval"
+set ylabel "Median max error"
+
+set output "line_plots/osm_etb_duration_threshold_median_max_error.pdf"
+plot [1:120] [:] \
+'extrapolator_testbench_output_osm/extrapolators_duration_threshold_median_max_error.txt' using 1:2 with lines ti "CL", \
+'extrapolator_testbench_output_osm/extrapolators_duration_threshold_median_max_error.txt' using 1:3 with lines ti "CV", \
+'extrapolator_testbench_output_osm/extrapolators_duration_threshold_median_max_error.txt' using 1:4 with lines ti "CA", \
+'extrapolator_testbench_output_osm/extrapolators_duration_threshold_median_max_error.txt' using 1:5 with lines ti "CD", \
+'extrapolator_testbench_output_osm/extrapolators_duration_threshold_median_max_error.txt' using 1:6 with lines ti "E", \
+'extrapolator_testbench_output_osm/extrapolators_duration_threshold_median_max_error.txt' using 1:7 with lines ti "DX", \
+'extrapolator_testbench_output_osm/extrapolators_duration_threshold_median_max_error.txt' using 1:8 with lines ti "T"
+set output "dump"

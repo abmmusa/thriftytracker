@@ -1,0 +1,7 @@
+data error=1,const-loc Error=1 error=2,const-loc Error=2 error=5,const-loc Error=5 error=10,const-loc Error=10 error=20,const-loc Error=20 error=50,const-loc Error=50 error=100,const-loc Error=100
+0.25 256.00 256.00 256.00 244.85 256.00 256.00 248.70
+0.5 256.00 254.67 213.28 201.90 224.89 180.51 89.98
+1 220.57 191.09 105.96 62.68 55.13 35.88 20.19
+2 98.08 32.22 16.45 12.63 14.40 2.41 0.00
+4 9.98 6.41 3.62 2.36 0.41 0.00 0.00
+8 2.21 1.26 0.00 0.00 0.00 0.00 0.00

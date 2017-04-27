@@ -1,0 +1,7 @@
+data straw-man,const-loc straw-man,unified delay=0,const-loc Delay=0 delay=8,const-loc Delay=8 delay=16,const-loc Delay=16 delay=32,const-loc Delay=32 delay=64,const-loc Delay=64 delay=128,const-loc Delay=128
+0.25 100.00 98.41 69.06 65.29 63.41 56.99 43.54 23.13 
+0.50 100.00 91.67 59.93 50.65 42.93 31.44 14.51 4.85 
+1.00 100.00 85.68 45.93 31.39 22.08 10.20 3.50 1.31 
+2.00 100.00 72.49 30.98 14.46 7.07 2.39 0.81 0.60 
+4.00 100.00 53.42 19.46 5.27 1.56 0.74 0.46 0.39 
+8.00 100.00 27.41 11.62 1.07 0.37 0.04 0.03 0.04 

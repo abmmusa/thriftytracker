@@ -1,0 +1,170 @@
+set terminal pdf font "Helvetica,8" lw 3 #monochrome dashed lw 3
+set key above
+set key font ",7"
+
+set style data histogram
+set style histogram cluster gap 4
+set style fill solid border -1
+
+set auto x
+set yrange [:]
+
+set xlabel "Time (seconds)"
+set ylabel "Mean duration"
+
+set output "window_viewer_output/window_viewer_output1025.pdf"
+plot \
+'window_viewer_output/window_viewer_output1025.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "M0", \
+'' using 7 ti "M1", \
+'' using 8 ti "MG", \
+'' using 10 ti "MM0", \
+'' using 11 ti "MM1"
+set output "dump"
+
+set output "window_viewer_output/window_viewer_output1105.pdf"
+plot \
+'window_viewer_output/window_viewer_output1105.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "M0", \
+'' using 7 ti "M1", \
+'' using 8 ti "MG", \
+'' using 10 ti "MM0", \
+'' using 11 ti "MM1"
+set output "dump"
+
+set output "window_viewer_output/window_viewer_output1115.pdf"
+plot \
+'window_viewer_output/window_viewer_output1115.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "M0", \
+'' using 7 ti "M1", \
+'' using 8 ti "MG", \
+'' using 10 ti "MM0", \
+'' using 11 ti "MM1"
+set output "dump"
+
+set output "window_viewer_output/window_viewer_output1125.pdf"
+plot \
+'window_viewer_output/window_viewer_output1125.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "M0", \
+'' using 7 ti "M1", \
+'' using 8 ti "MG", \
+'' using 10 ti "MM0", \
+'' using 11 ti "MM1"
+set output "dump"
+
+set output "window_viewer_output/window_viewer_output1135.pdf"
+plot \
+'window_viewer_output/window_viewer_output1135.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "M0", \
+'' using 7 ti "M1", \
+'' using 8 ti "MG", \
+'' using 10 ti "MM0", \
+'' using 11 ti "MM1"
+set output "dump"
+
+set output "window_viewer_output/window_viewer_output1140.pdf"
+plot \
+'window_viewer_output/window_viewer_output1140.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "M0", \
+'' using 7 ti "M1", \
+'' using 8 ti "MG", \
+'' using 10 ti "MM0", \
+'' using 11 ti "MM1"
+set output "dump"
+
+set output "window_viewer_output/window_viewer_output1155.pdf"
+plot \
+'window_viewer_output/window_viewer_output1155.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "M0", \
+'' using 7 ti "M1", \
+'' using 8 ti "MG", \
+'' using 10 ti "MM0", \
+'' using 11 ti "MM1"
+set output "dump"
+
+set output "window_viewer_output/window_viewer_output1190.pdf"
+plot \
+'window_viewer_output/window_viewer_output1190.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "M0", \
+'' using 7 ti "M1", \
+'' using 8 ti "MG", \
+'' using 10 ti "MM0", \
+'' using 11 ti "MM1"
+set output "dump"
+
+set output "window_viewer_output/window_viewer_output1230.pdf"
+plot \
+'window_viewer_output/window_viewer_output1230.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "M0", \
+'' using 7 ti "M1", \
+'' using 8 ti "MG", \
+'' using 10 ti "MM0", \
+'' using 11 ti "MM1"
+set output "dump"
+
+set output "window_viewer_output/window_viewer_output1275.pdf"
+plot \
+'window_viewer_output/window_viewer_output1275.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "M0", \
+'' using 7 ti "M1", \
+'' using 8 ti "MG", \
+'' using 10 ti "MM0", \
+'' using 11 ti "MM1"
+set output "dump"
+
+set output "window_viewer_output/window_viewer_output1285.pdf"
+plot \
+'window_viewer_output/window_viewer_output1285.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "M0", \
+'' using 7 ti "M1", \
+'' using 8 ti "MG", \
+'' using 10 ti "MM0", \
+'' using 11 ti "MM1"
+set output "dump"
+
+set output "window_viewer_output/window_viewer_output1320.pdf"
+plot \
+'window_viewer_output/window_viewer_output1320.txt' using 2:xtic(1) ti "CL", \
+'' using 3 ti "CV", \
+'' using 4 ti "CA", \
+'' using 5 ti "CD", \
+'' using 6 ti "M0", \
+'' using 7 ti "M1", \
+'' using 8 ti "MG", \
+'' using 10 ti "MM0", \
+'' using 11 ti "MM1"
+set output "dump"
+
